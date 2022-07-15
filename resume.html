@@ -27,8 +27,9 @@
         </ul>
       </div>
     </nav>
+
     <header id="heading">
-      <div class="image-container">
+      <div class="image-container" background="dark.jpg">
         <img
           id="profilePhoto"
           src="./Images/profilePhoto2.jpg"
@@ -58,6 +59,7 @@
               my computer learning and gaming.
             </p>
           </div>
+          <br />
           <h2 id="education">/Education</h2>
           <br />
           <h5 class="education1">{Education 1}</h5>
@@ -72,6 +74,7 @@
             Started at Hoërskool Die Wilgers in Grade 10. I did Athletics and
             Hockey for the school all 3 years.
           </p>
+          <br />
           <h5 class="education2">{Education 2}</h5>
           <h3 class="code_space_study">
             {Intro to Web at
@@ -80,6 +83,7 @@
           </h3>
 
           <p>Started the Intro to Web course on the 13 June 2022.</p>
+          <br />
 
           <h2 id="experience">/Experience</h2>
           <h3 id="job-1">{Master Machining}</h3>
@@ -100,6 +104,7 @@
               Always learn new techniques to cut different types of materials.
             </li>
           </ul>
+          <br />
 
           <h2 id="skills">/Skills</h2>
           <ul>
@@ -112,20 +117,56 @@
         </div>
       </div>
     </main>
-    <footer>
-      <h3>Contact Details</h3>
-      <ul>
-        <a
-          href="https://www.linkedin.com/search/results/all/?keywords=marco%20vermeulen&origin=RICH_QUERY_SUGGESTION&position=0&searchId=84d6d7f9-737d-4ea5-a95e-a0becbaad445&sid=ilO"
-          target="_blank"
-        >
-          <img
-            class="icons"
-            src="./Images/linkedinLogo.png"
-            alt="Marco Vermeulen Linkedin"
-          />
-        </a>
-      </ul>
+
+    <div id="form-contact" class="container mt-5">
+        <h3>Contact Me</h3>
+        <form class="row g-3">
+           <div class="col-md-6">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstName" required>
+           </div> 
+           <div class="col-md-6">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastName" required>
+           </div>
+           <div class="col-md-8">
+            <label for="emailInfo" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="emailInfo" required>
+           </div>
+           <div class="col-md-4">
+            <label for="phoneNumber" class="form-Label">Phone Number</label>
+            <input type="text" class="form-control" id="phoneNumber" placeholder="+27 82 345 6789">
+           </div>
+           <div class="col-md-12">
+            <label for="comments" class="form-label">Comments</label>
+            <textarea class="form-control" id="comments" rows="3"></textarea>
+           </div>
+           
+           <div class="col-md-12">
+            <button type="submit" class="btn btn-dark">Submit</button>
+           </div>
+        </form>
+    </div>
+    <footer class="container">
+      <div class="jumbotron text-center text-white bg-dark "
+      style="margin-bottom:0" >
+      <div class="row">
+        <div class="col-sm-4">
+          <h3>Contact Details</h3>
+          <ul>
+            <a
+              href="https://www.linkedin.com/search/results/all/?keywords=marco%20vermeulen&origin=RICH_QUERY_SUGGESTION&position=0&searchId=84d6d7f9-737d-4ea5-a95e-a0becbaad445&sid=ilO"
+              target="_blank"
+            >
+              <img
+                class="icons"
+                src="./Images/linkedinLogo.png"
+                alt="Marco Vermeulen Linkedin"
+              />
+            </a>
+          </ul>
+        </div>
+      </div>
     </footer>
     <script
       type="module"
